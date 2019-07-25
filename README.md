@@ -1,2 +1,0 @@
-# dezisque.github.io
-update
