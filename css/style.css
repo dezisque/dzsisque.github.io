@@ -137,8 +137,8 @@ header{
 }
 
 .view-mobile-subtitle{
-  color: rgba(60, 60, 60, .6);
-  font-size: 2.2vw;
+  color: rgba(255,255,255,.7);
+  font-size: 2.8vw;
   text-align: center;
   text-transform: uppercase;
   font-weight: bolder;
@@ -226,7 +226,7 @@ header{
 .about-text-description{
   font-size: 1vw;
   text-transform: uppercase;
-  color: rgba(255,255,255,.5);
+  color: rgba(255,255,255,.7);
   font-weight: bold;
   display: block;
 }
@@ -388,6 +388,10 @@ header{
 
 .gallery,.gallery-item{
   padding: 0;
+}
+
+.gallery{
+  padding-bottom: 8.5vw;
 }
 
 .gallery-item img{
@@ -705,6 +709,24 @@ header{
   display: block;
 }
 
+.more-views .view-mobile-title{
+  font-size: 1.5vw;
+  background: none;
+  margin-top: -1vw;
+  width: 100%;
+}
+
+.more-views .view-mobile-subtitle{
+  font-size: 1vw;
+  width: 80%;
+  margin-top: 1.5vw;
+}
+
+.more-views .view-mobile-btn{
+  font-size: 1vw;
+  width: 80%;
+}
+
 @media screen and (max-width: 1023px){ /*TABLETS*/
   .content-container{
     width: 80%;
@@ -796,11 +818,11 @@ header{
   }
 
   .columns > .about-left-column{
-    order: 5
+    order: -5
   }
 
   .columns > .about-right-column{
-    order: -5;
+    order: 5;
   }
 
   #yt-player{
@@ -896,7 +918,7 @@ header{
   .booking-body{
     width: 90%;
     height: 100vw;
-    margin-top: 4vw;
+    margin-top: 8vw;
     border: 2px rgba(255,255,255,.1) dotted;
   }
 
@@ -966,14 +988,14 @@ header{
   }
 
   .restrictions-column-title{
-    font-size: 2.5vw;
+    font-size: 3vw;
     text-align: center;
   }
 
   .restrictions-column-description-mobile{
     color: #fff;
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 3vw;
     display: block;
     text-align: center;
   }
@@ -1073,6 +1095,10 @@ header{
 
   .gallery .columns{
     margin: 0!important;
+  }
+
+  .gallery{
+    padding-top: 16vw;
   }
 
   .contact-us{
@@ -1178,5 +1204,15 @@ header{
     font-size: 2vw;
     color: rgba(255, 255, 255, 0.5);
     float: right;
+  }
+
+  .booking-header-inner-description{
+    text-align: center;
+    color: #bf0c29;
+    font-size: 1.5vw;
+    display: block;
+    width: 80%;
+    margin: 2vw auto;
+    padding-bottom: 2vw;
   }
 }

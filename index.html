@@ -79,7 +79,11 @@
           </div>
           <div>
             <div class="more-views">
-              <a class="button more-views-btn is-rounded">Почитать реальные отзывы</a>
+              <div class="container view-mobile is-hidden-mobile">
+                <span class="view-mobile-title">Что о нас говорят?</span>
+                <span class="view-mobile-subtitle">Почитайте наши реальные отзывы от настоящих посетителей хорор квеста наследие</span>
+                <a class="button is-link is-inverted is-outlined view-mobile-btn">Почитать отзывы&#160;&#160;&#10230;</a>
+              </div>
             </div>
           </div>
           <div>
@@ -103,7 +107,11 @@
           </div>
           <div>
             <div class="more-views">
-              <a class="button more-views-btn is-rounded">Почитать реальные отзывы</a>
+              <div class="container view-mobile is-hidden-mobile">
+                <span class="view-mobile-title">Что о нас говорят?</span>
+                <span class="view-mobile-subtitle">Почитайте наши реальные отзывы от настоящих посетителей хорор квеста наследие</span>
+                <a class="button is-link is-inverted is-outlined view-mobile-btn">Почитать отзывы&#160;&#160;&#10230;</a>
+              </div>
             </div>
           </div>
           <div>
@@ -127,7 +135,11 @@
           </div>
           <div>
             <div class="more-views">
-              <a class="button more-views-btn is-rounded">Почитать реальные отзывы</a>
+              <div class="container view-mobile is-hidden-mobile">
+                <span class="view-mobile-title">Что о нас говорят?</span>
+                <span class="view-mobile-subtitle">Почитайте наши реальные отзывы от настоящих посетителей хорор квеста наследие</span>
+                <a class="button is-link is-inverted is-outlined view-mobile-btn">Почитать отзывы&#160;&#160;&#10230;</a>
+              </div>
             </div>
           </div>
           <div>
@@ -162,6 +174,7 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
             </span>
+            <div class="about-hr about-hr-mobile is-hidden-tablet"></div>
           </div>
           <div class="column about-right-column">
             <div class="plyr__video-embed" id="player">
@@ -173,7 +186,7 @@
                   allow="autoplay"
               ></iframe>
             </div>
-            <div class="about-hr about-hr-mobile is-hidden-tablet"></div>
+
           </div>
         </div>
         <div class="about-hr is-hidden-mobile"></div>
@@ -211,16 +224,6 @@
         </div>
       </div>
     </section>
-    <section class="section booking">
-      <div class="container booking-header-inner">
-        <span class="booking-header-inner-title is-hidden-mobile">Забронируйте квест хоррор</span>
-        <span class="booking-header-inner-title-mobile is-hidden-tablet">Забронируйте квест</span>
-        <span class="booking-header-inner-description is-hidden-mobile">Стоимость игры для команды 1-4 игрока составляет 7000, доплата за каждого дополнительного участника по 1000</span>
-      </div>
-    </section>
-    <section class="booking-body">
-      <span>БРОНИРОВАНИЕ</span>
-    </section>
     <section class="section gallery">
       <div class="columns">
         <div class="column gallery-item">
@@ -233,6 +236,16 @@
           <img src="https://i.ytimg.com/vi/WR46CY0xrgw/maxresdefault.jpg" alt="">
         </div>
       </div>
+    </section>
+    <section class="section booking">
+      <div class="container booking-header-inner">
+        <span class="booking-header-inner-title is-hidden-mobile">Забронируйте квест хоррор</span>
+        <span class="booking-header-inner-title-mobile is-hidden-tablet">Забронируйте квест</span>
+        <span class="booking-header-inner-description">Стоимость игры для команды 1-4 игрока составляет 7000, доплата за каждого дополнительного участника по 1000</span>
+      </div>
+    </section>
+    <section class="booking-body">
+      <span>БРОНИРОВАНИЕ</span>
     </section>
     <section class="section more-info">
       <div class="container content-container more-info-inner">
@@ -338,58 +351,62 @@
         <div class="contact-us-vl"></div>
         <span class="contact-us-title">Свяжитесь с нами</span>
         <span class="contact-us-title-mobile is-hidden-tablet">Спросите нас интересующие вас вопросы</span>
-        <div class="field is-hidden-mobile">
-          <div class="control">
-            <input class="input" type="text" placeholder="Email">
+        <form action="sendMail.php" method="post">
+          <div class="field is-hidden-mobile">
+            <div class="control">
+              <input class="input" type="text" placeholder="Email" name="email" required>
+            </div>
+            <div class="control">
+              <input class="input" type="text" placeholder="Ваше имя" name="name" required>
+            </div>
+            <div class="control">
+              <textarea class="textarea" row="6" placeholder="Текст" name="message" required></textarea>
+            </div>
+            <div class="control control-submit-btn">
+              <button class="button is-text" type="submit">Отправить</button>
+            </div>
           </div>
-          <div class="control">
-            <input class="input" type="text" placeholder="Ваше имя">
-          </div>
-          <div class="control">
-            <textarea class="textarea" row="6" placeholder="Текст"></textarea>
-          </div>
-          <div class="control control-submit-btn">
-            <button class="button is-text">Отправить</button>
+        </form>
+        <form action="sendMailMobile.php" method="post">
+          <div class="field field-mobile is-hidden-tablet">
+            <div class="columns is-mobile">
+              <div class="column">
+                <div class="control">
+                  <label class="label">Ваше имя</label>
+                  <input class="input" type="text" placeholder="">
+                </div>
+              </div>
+              <div class="column">
+                <div class="control">
+                  <label class="label">Email</label>
+                  <input class="input" type="text" placeholder="">
+                </div>
+              </div>
+            </div>
+            <div class="columns is-mobile">
+              <div class="column">
+                <div class="control">
+                  <label class="label">Телефон</label>
+                  <input class="input" type="text" placeholder="">
+                </div>
+              </div>
+              <div class="column">
+                <div class="control">
+                  <label class="label">Тема</label>
+                  <input class="input" type="text" placeholder="">
+                </div>
+              </div>
+            </div>
+            <div class="control">
+              <label class="label">Сообщение</label>
+              <textarea class="textarea" row="1" placeholder=""></textarea>
+            </div>
+            <div class="control control-submit-btn">
+              <button class="button is-text">Отправить&#160;&#160;&#10230;</button>
+            </div>
           </div>
         </div>
-        <div class="field field-mobile is-hidden-tablet">
-          <div class="columns is-mobile">
-            <div class="column">
-              <div class="control">
-                <label class="label">Ваше имя</label>
-                <input class="input" type="text" placeholder="">
-              </div>
-            </div>
-            <div class="column">
-              <div class="control">
-                <label class="label">Email</label>
-                <input class="input" type="text" placeholder="">
-              </div>
-            </div>
-          </div>
-          <div class="columns is-mobile">
-            <div class="column">
-              <div class="control">
-                <label class="label">Телефон</label>
-                <input class="input" type="text" placeholder="">
-              </div>
-            </div>
-            <div class="column">
-              <div class="control">
-                <label class="label">Тема</label>
-                <input class="input" type="text" placeholder="">
-              </div>
-            </div>
-          </div>
-          <div class="control">
-            <label class="label">Сообщение</label>
-            <textarea class="textarea" row="1" placeholder=""></textarea>
-          </div>
-          <div class="control control-submit-btn">
-            <button class="button is-text">Отправить&#160;&#160;&#10230;</button>
-          </div>
-        </div>
-      </div>
+      </form>
     </section>
     <footer class="footer">
       <div class="container content-container">
