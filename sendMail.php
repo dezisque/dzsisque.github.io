@@ -9,7 +9,6 @@ if(isset($_POST['submit'])){
        echo "Something went wrong.";// error
       } else {
         echo "Message was send";// correct
-
          }
 }
 ?>
