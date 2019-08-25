@@ -1,0 +1,36 @@
+@import url(//db.onlinewebfonts.com/c/56b97223973d609a55cfe1bfa22af382?family=Akron+Shades+NBP);
+
+@font-face {
+  font-family: 'Bebas Neue Bold';
+  src: url('./fonts/BebasNeueBold.eot');
+  src: url('./fonts/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/BebasNeueBold.woff') format('woff'),
+  url('./fonts/BebasNeueBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Evolventa Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Evolventa Regular'), url('./fonts/Evolventa-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Evolventa Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Evolventa Oblique'), url('./fonts/Evolventa-Oblique.woff') format('woff');
+}
+@font-face {
+    font-family: 'Evolventa Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Evolventa Bold'), url('./fonts/Evolventa-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Evolventa Bold Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Evolventa Bold Oblique'), url('./fonts/Evolventa-BoldOblique.woff') format('woff');
+}

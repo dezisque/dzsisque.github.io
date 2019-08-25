@@ -1,0 +1,264 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#app{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+header{
+  position: relative;
+  height: 100vh;
+  z-index: 1;
+  background-color: #fff;
+
+}
+
+
+ .header-bg::after {
+ 	content: "";
+ 	position: absolute;
+   z-index: 10;
+   width: 150vw;
+   margin-left: -25%;
+   height: 50%;
+   bottom: -50%;
+   border-radius: 50%;
+   box-shadow: 0px -100px 0px 72px black;
+  }
+
+i {
+  border: solid #fff;
+  border-width: 0 0.4vw 0.4vw 0;
+  display: inline-block;
+  padding: 1.2vw;
+
+}
+
+.right {
+  margin-top: 2vw;
+  margin-left: 1.5vw;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  margin-top: 2vw;
+  margin-left: 2.8vw;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.header-bg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url("https://media.giphy.com/media/26BkMeKTW96DDUwYE/giphy.gif") no-repeat;
+  height: calc(100vh + 10vw);
+  width: 100vw;
+  background-size: cover;
+  opacity: .3;
+}
+
+.header-logo{
+  background: url("./assets/logo.png");
+  background-size: cover;
+  width: 20vw;
+  height: 16vw;
+  position: relative;
+  top: calc(50vh - 8vw);
+  left: calc(50vw - 10vw);
+}
+
+.header-subtitle{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Bebas Neue Bold';
+  font-size: 3vw;
+  position: relative;
+  top: calc(50vh - 7vw);
+  left: calc(31.25vw);
+}
+
+
+#particles-js {
+  background-color: black;
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:0;
+}
+
+.container{
+
+}
+
+.services{
+  z-index: 3;
+  max-width: 100%!important;
+}
+
+.services-title, .services-subtitle{
+  text-transform: uppercase;
+  font-size: 3.7vw;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Bebas Neue Bold';
+  display: block;
+  text-align: center;
+  padding: 6vw 0;
+
+}
+
+.services-subtitle{
+  font-size: 3vw;
+  padding-top: 0;
+  padding-bottom: 4vw;
+}
+
+.services-title p, .services-subtitle p{
+  color: #ffff00;
+  display: inline;
+}
+
+.services-card{
+  height: 100vh;
+}
+
+.services-card-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.services-card-header-left-btn, .services-card-header-right-btn{
+  width: 8vw;
+  height: 8vw;
+  border-radius: 0.8vw;
+  border: 0.3vw #fff solid;
+}
+
+.services-card-header-right-btn{
+  float: right;
+}
+
+.services-card-header-title{
+  text-transform: uppercase;
+  font-size: 3vw;
+  text-align: center;
+  color: #ffff00;
+  margin-left: 2vw;
+  margin-top: 1.5vw;
+  letter-spacing: 2vw;
+  font-family: Akron Shades NBP;
+}
+
+.service-card-body-description{
+  color: #fff;
+  font-size: 1.2vw;
+  font-family: Evolventa Regular;
+  display: block;
+  float: right;
+  margin-top: 4vw;
+  padding-bottom: 2vw;
+  width: 80%;
+  white-space: pre-line;
+}
+
+.service-card-body-steps{
+  list-style-type: none;
+  width: 80%;
+  float: right;
+}
+
+.service-card-body-step{
+  line-height: 2.5vw;
+  position: relative;
+  font-size: 1.3vw;
+  color: #fff;
+  font-family: 'Bebas Neue Bold';
+  padding-left: 1vw;
+  text-transform: uppercase;
+}
+
+.service-card-body-step::before{
+    color: #ffff00;
+    content:"\2022";
+    font-size: 5vw;
+    font-weight: 700;
+    left: -1.5vw;
+    line-height: 3.2vw;
+    position: absolute;
+    top: 0;
+}
+
+.service-planet
+{
+  position: absolute;
+  right: -20vw;
+  z-index: -1;
+  top: 25vw;
+  height: 50vw;
+  width: 50vw;
+  background-size: contain;
+}
+
+.slide-fade-enter-active {
+  transition: all 1s;
+}
+.slide-fade-leave-active {
+  transition: all 2s;
+}
+.slide-fade-enter
+/* .slide-fade-leave-active до версии 2.1.8 */ {
+  transform: translateX(20vw) rotate(360deg);
+  opacity: 0;
+}
+
+.slide-fade-leave-to{
+  transform: translateX(-120vw) rotate(360deg);
+}
+
+.fading-title-enter-active, .fading-title-leave-active {
+  transition: opacity 2s;
+}
+.fading-title-enter, .fading-title-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+.fading-description-enter-active {
+  transition: opacity 2s;
+  transition-delay: .5s;
+}
+
+.fading-description-leave-active{
+  transition: opacity 2s;
+}
+
+.fading-description-enter, .fading-description-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+.fading-tips-enter-active {
+  transition: opacity 2s;
+  transition-delay: 3s;
+}
+
+.fading-tips-leave-active{
+  transition: opacity 2s;
+}
+
+.fading-tips-enter, .fading-tips-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+.about{
+  position: relative;
+  z-index: 5;
+}
